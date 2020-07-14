@@ -122,7 +122,7 @@
   .col-xs-12 {
     width: 100%;
   }
-  .d-none-lg {
+  .d-none-xs {
     display: none;
   }
 }
