@@ -2,12 +2,15 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
 a {
   text-decoration: none;
 }
+
 .list-inline {
   list-style: none;
 }
+
 .list-inline  li {
   display: inline-block;
 }
@@ -34,9 +37,11 @@ a {
 .main-menu {
   text-align: right;
 }
+
 .main-menu li {
   padding-right: 30px;
 }
+
 .main-menu li a {
   color: #000;
 }
@@ -79,7 +84,7 @@ a {
 
 .text-center{
   text-align: center;
-  padding-top: 12%;
+  padding-top: 20%;
   font-size: 25px;
   color:#fff;
 }
@@ -93,4 +98,42 @@ a {
   display: inline-block;
   width: 150px;
   height: 100px;
+}
+
+.helblogo{
+  width: 180px;
+  height: 100px;
+  padding-top: 20px;
+  margin-left: 35%;;
+}
+
+.mono{
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+.monopattino h3{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.learn{
+  padding-left: 38%;
+  font-size: 20px;
+}
+
+@media screen and (max-widith: 768px)  {
+  .mono{
+    width: 30px;;
+  }
+}
+.main-bottom{
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-image: url("../img/Schermata 2020-07-14 alle 17.28.39.png");
+  background-position:left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
 }
