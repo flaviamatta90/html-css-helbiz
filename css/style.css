@@ -15,6 +15,10 @@ a {
   display: inline-block;
 }
 
+.link-arrow{
+  display: block;
+}
+
 /* HEADER */
 
 /* header top */
@@ -68,7 +72,7 @@ a {
 /* Hero */
 .hero {
   position: relative;
-  height: 625px;
+  height: 680px;
   background-image: url('../img/hero-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -76,57 +80,65 @@ a {
   opacity: 0.9;
 }
 
-.hero::after{
-  clear: both;
-  display: block;
-  content: "";
-}
-
 .text-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  padding-top: 20%;
-  font-size: 25px;
   color:#fff;
 }
 
-.text-center h2{
+h1{
+  font-size: 45px;
+}
+
+p{
   font-size: 18px;
-  padding-top: 20px;
+  margin: 20px 0;
 }
 
-.app img{
-  display: inline-block;
-  width: 150px;
-  height: 100px;
+.hero-text-app{
+  height: 50px;
+  margin-top: 20px;
 }
 
-.helblogo{
-  width: 180px;
-  height: 100px;
-  padding-top: 20px;
-  margin-left: 35%;;
-}
-
-.mono{
-  padding: 30px;
-  margin-bottom: 100px;
-}
-
-.monopattino h3{
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.learn{
-  padding-left: 38%;
-  font-size: 20px;
-}
-
-@media screen and (max-widith: 768px)  {
-  .mono{
-    width: 30px;;
+@media screen and (max-width: 768px;){
+  .text-cener{
+    width: 100%;
+    font-size: 16px;
   }
 }
+
+.prodotti{
+  margin: 50px 0;
+}
+
+.product{
+  padding: 60px;
+  margin: 20px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.product-title{
+  height: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-img{
+  display: block;
+  max-width: 100%;
+  max-height: 300px;
+  margin: auto;
+  padding-top:20px;
+}
+
+.product a {
+  color: #009ddd;
+}
+
 .main-bottom{
   position: relative;
   width: 100%;
@@ -134,6 +146,13 @@ a {
   background-image: url("../img/Schermata 2020-07-14 alle 17.28.39.png");
   background-position:left;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   opacity: 0.9;
+}
+
+@media screen and (max-width: 768px)  {
+  .mono{
+    max-width: 100%;
+    max-height: 340px;
+  }
 }
